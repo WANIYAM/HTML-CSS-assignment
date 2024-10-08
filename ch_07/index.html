@@ -9,105 +9,81 @@
 
 <body>
 
-    <h1>
-        <font size="10">Forms</font>
-    </h1>
-
-    <form action="submit_review.php" method="POST">
-        <table border="1" cellpadding="30" cellspacing="0" width="3000"  >
-            <tr>
-                <td align="center"><strong>
-                        <font size="100">Your Details:</font>
-                    </strong></td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <label for="name">
-                        <font size="50">Name:</font>
-                    </label><br>
-                    <input type="text" id="name" name="name" size="100" required><br>
-
-                    <label for="email">
-                        <font size="50">Email:</font>
-                    </label><br>
-                    <input type="email" id="email" name="email" size="100" required><br>
-                </td>
-            </tr>
-        </table>
-
-        <br>
-
-        <table border="1" cellpadding="30" cellspacing="0" width="3000">
-            <tr>
-                <td colspan="2" align="center"><strong>
-                        <font size="100">Your Review:</font>
-                    </strong></td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <label for="source" >
-                       <strong> <font size="100">How did you hear about us?</font>
-                    </label>
-
-                    <select id="source" name="source" >
-                        <option value="Google">
-                            <font size="100">Google</font>
-                        </option>
-                        <option value="Social Media">
-                            <font size="100">Social Media</font>
-                        </option>
-                        <option value="Friend">
-                            <font size="100">Friend</font>
-                        </option>
-                        <option value="Other">
-                            <font size="100">Other</font>
-                        </option>
-                    </select>
-                    </font>
-                </strong>
-                    <br>
-                    <br>
-
-                    <strong>
-                        <font size="100">Would you visit again?</font>
+    <table align="center">
+        <tr>
+            <td>
+                <h1 align="center"><font size="6">Forms</font></h1>
+                <form action="submit_review.php" method="POST">
                     
+                    <table border="1" cellpadding="8" cellspacing="0" width="400" align="center">
+                        <tr>
+                            <td align="center">
+                                <strong><font size="5">Your Details</font></strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <label for="name"><font size="4">Name:</font></label><br>
+                                <input type="text" id="name" name="name" size="35" required><br><br>
+
+                                <label for="email"><font size="4">Email:</font></label><br>
+                                <input type="email" id="email" name="email" size="35" required><br><br>
+                            </td>
+                        </tr>
+                    </table>
+
                     <br>
-                    <br>
-                    <input type="radio" id="yes" name="visit_again" value="yes">
-                    <label for="yes">
-                        <font size="30">Yes</font>
-                    </label>
-                    <input type="radio" id="no" name="visit_again" value="no">
-                    <label for="no">
-                        <font size="30">No</font>
-                    </label>
-                    <input type="radio" id="maybe" name="visit_again" value="maybe">
-                    <label for="maybe">
-                        <font size="30">Maybe</font>
-                    </label>
-                    <br>
 
-                    <label for="comments">
-                        <font size="90">Comments:</font>
-                    </label><br>
-                    <textarea id="comments" name="comments" rows="10" required></textarea><br>
+                    <!-- Your Review Section -->
+                    <table border="1" cellpadding="8" cellspacing="0" width="500" align="center">
+                        <tr>
+                            <td colspan="2" align="center">
+                                <strong><font size="5">Your Review</font></strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <!-- How did you hear about us -->
+                                <label for="source"><font size="4">How did you hear about us?</font></label><br>
+                                <select id="source" name="source">
+                                    <option value="Google"><font size="4">Google</font></option>
+                                    <option value="Social Media"><font size="4">Social Media</font></option>
+                                    <option value="Friend"><font size="4">Friend</font></option>
+                                    <option value="Other"><font size="4">Other</font></option>
+                                </select>
+                                <br><br>
 
-                    <label>
-                        <input type="checkbox" id="email_updates" name="email_updates">
-                        <font size="10">Sign me up for email updates</font>
-                    </label></strong>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
+                                <!-- Would you visit again -->
+                                <font size="4"><strong>Would you visit again?</strong></font><br><br>
+                                <input type="radio" id="yes" name="visit_again" value="yes">
+                                <label for="yes"><font size="4">Yes</font></label>
 
-                    <input type="submit" value="  Submit review   ">
+                                <input type="radio" id="no" name="visit_again" value="no">
+                                <label for="no"><font size="4">No</font></label>
 
+                                <input type="radio" id="maybe" name="visit_again" value="maybe">
+                                <label for="maybe"><font size="4">Maybe</font></label>
+                                <br><br>
 
-                </td>
-            </tr>
-        </table>
-    </form>
+                                <!-- Comments Section -->
+                                <label for="comments"><font size="4">Comments:</font></label><br>
+                                <textarea id="comments" name="comments" rows="6" cols="50" required></textarea><br><br>
+
+                                <!-- Email Updates -->
+                                <input type="checkbox" id="email_updates" name="email_updates">
+                                <label for="email_updates"><font size="3">Sign me up for email updates</font></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Submit Review">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
 
 </body>
 
